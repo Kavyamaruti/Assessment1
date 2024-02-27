@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+      body {
+         font-family: Arial;
+         font-size: 17px;
+         padding: 8px;
+      }
+      * {
+         box-sizing: border-box;
+      }
+      .Fields {
+         display: flex;
+         flex-wrap: wrap;
+         padding: 20px;
+         justify-content: space-around;
+      }
+      .Fields div {
+         margin-right: 10px;
+      }
+      label {
+         margin: 15px;
+      }
+      .formContainer {
+         margin: 10px;
+         background-color: #efffc9;
+         padding: 5px 20px 15px 20px;
+         border: 1px solid rgb(191, 246, 250);
+         border-radius: 3px;
+      }
+      input[type="text"] {
+         display: inline-block;
+         width: 100%;
+         margin-bottom: 20px;
+         padding: 12px;
+         border: 1px solid #ccc;
+         border-radius: 3px;
+      }
+      input[type="submit"] {
+         width: 100%;
+         background-color: rgb(139, 76, 175);
+         color: white;
+         padding: 12px 20px;
+         border: none;
+         cursor: pointer;
+         font-size: 18px;
+      }
+      label {
+         margin-left: 20px;
+         display: block;
+      }
+    
+      a {
+         color: black;
+      }
+      @media (max-width: 600px) {
+         .Fields {
+            flex-direction: column-reverse;
+         }
+      }
+      
+   </style>
+</head>
+<body>
+   <h1 style="text-align: center;">Registration Form</h1>
+   <div class="Fields">
+      <div>
+         <div class="formContainer">
+            <form>
+               <div class="Fields">
+                  <div>
+                     <h3 style="text-align: center;">Register Details</h3>
+                     <label for="fname">1.Full Name</label>
+                     <input type="text" id="fname" placeholder="First name" />
+                     <input type="text" id="fname" placeholder="Last name" />
+                     
+                     <label for="email">2.Email</label>
+                     <input type="text" id="email"  placeholder="Email"/>
+                     
+                     <label for="adr">3.Contact Number</label>
+                     <input type="text" id="adr" placeholder="Mobile Number"/>
+                    
+                     <label for="adr">4.Qualification</label>
+                     <input  type="text" id="adr"/>
+                     
+                     <label for="adr">5. Gender</label>
+                     <input type="radio" name="male" />Male<br>
+                     <input type="radio" name="male" />Female<br>
+                     <input type="radio" name="male" />Others<br>
+                    
+                     
+                     <label for="adr">6.Current Adress</label>
+                     <input type="text" id="adr"/>
+                 
+               </div>
+               <input type="submit" value="Submit" />
+            </form>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
